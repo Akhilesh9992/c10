@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login | Home</title>
+    <title>Home</title>
     <meta name="description" content="">
     <!-- View-port Basics: http://mzl.la/VYREaP -->
     <!-- This meta tag is used for mobile device to display the page without any zooming,
@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Normal favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
 
     <!-- PNG/GIF favicon -->
     <!-- Remove this block if not required -->
@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" href="favicon.png" /> -->
 
     <!-- <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"> -->
-
+    <link rel="stylesheet" href="css/main2.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -248,7 +248,7 @@ function closeNav4() {
 
     <!--Start of main container-->
     <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"></div>
-    <div class="container-fluid"  id="mainContent" style="background:#3997a7;color:#fff;height:100vh;">
+    <div class="container-fluid"  id="mainContent" style="background:#3997a7;color:#fff;">
       <!--Start of wrapper container-->
       <!-- <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"  style="height:100vh;"> -->
         <header>
@@ -256,8 +256,8 @@ function closeNav4() {
               <nav class="navbar navbar-expand-md bg-dark navbar-dark">
                 <h1>
                   <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" width="50" >
-                    <h1 style="display:inline-block;font-size:20px;margin-left:10px;">Welcome to C10</h1>
+                    <img src="img/logo.png" width="50">
+                    <h1 style="display:inline-block;font-size:20px;margin-left:10px;">Chetan Classes</h1>
                   </a>
                 </h1>
                 <button class="navbar-toggler" type="button" onclick="openNav3();openOffcanvas()" >
@@ -267,43 +267,95 @@ function closeNav4() {
                   <a href="javascript:void(0)" class="closeOffcanvas" onclick="closeOffcanvas()">&times;</a>
                   <a href="login.html">Login</a>
                   <a href="register.html">Register</a>
-                  <a href="javascript:void(0)">About Us</a>
+                  <a href="aboutus.html">About Us</a>
                 </div>
               </nav>              
           </div>
         </header>
-        <section>
-          <!-- <h3 class="text-center" style="margin:20px;">Login</h3> -->
-          
-
-            <div class="row h-100" style="background:#3997a7;color:#fff;">
-              <div class="col-sm-12 my-auto">
-                <h3 class="text-center" style="margin:20px;">Confirm OTP</h3>
-                <form action="studentPage.html">
-                <div style="text-align:center;">
-                  <div style="width:50%;margin:0 auto;">
-                    <div class="row">
-                        <div class="col">
-                          <label for="mob">Enter OTP:</label>
-                        </div>
-                        <div class="col">
-                          <input type="text" name="otp" id="mob" maxlength="10" placeholder=" Enter OTP">
-                        </div>
+       <div id="main">
+            <div class="inner">
+              <header>
+                <h1> Select the courses, wanted to watch<br />
+               </h1>
+              </header>
+              <section class="tiles">
+                <article class="style1">
+                  <span class="image">
+                    <img src="img/pic01.jpg" alt="" />
+                  </span>
+                  <a href="home2.html">
+                    <h2>11th Sci</h2>
+                    <div class="content">
+                      <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
                     </div>
-                    <div class="text-center" style="margin:20px;">
-                      <input type="submit" value="Submit OTP">
+                  </a>
+                </article>
+                <article class="style2">
+                  <span class="image">
+                    <img src="img/pic02.jpg" alt="" />
+                  </span>
+                  <a href="home2.html">
+                    <h2>12th Sci</h2>
+                    <div class="content">
+                      <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
                     </div>
-                  </div>
-                </div>
-              </form>
+                  </a>
+                </article>
+                <article class="style3">
+                  <span class="image">
+                    <img src="img/pic03.jpg" alt="" />
+                  </span>
+                  <a href="home2.html">
+                    <h2>Enginneer</h2>
+                    <div class="content">
+                      <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                    </div>
+                  </a>
+                </article>
+                <article class="style4">
+                  <span class="image">
+                    <img src="img/pic04.jpg" alt="" />
+                  </span>
+                  <a href="home2.html">
+                    <h2>Diploma</h2>
+                    <div class="content">
+                      <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                    </div>
+                  </a>
+                </article>
+                <article class="style5">
+                  <span class="image">
+                    <img src="img/pic02.jpg" alt="" />
+                  </span>
+                  <a href="home2.html">
+                    <h2>Medical</h2>
+                    <div class="content">
+                      <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                    </div>
+                  </a>
+                </article>
+                <article class="style6">
+                  <span class="image">
+                    <img src="img/pic04.jpg" alt="" />
+                  </span>
+                  <a href="home2.html">
+                    <h2>CA</h2>
+                    <div class="content">
+                      <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                    </div>
+                  </a>
+                </article>
+               
+              </section>
             </div>
-          </div>       
-        </section>
-         
+          </div>
+          
       </div>
       <!--End of wrapper container-->
     </div>
     <!--End of main container-->
+   
+
     <script>
       /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
       function openNav() {

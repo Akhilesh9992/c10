@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login | Home</title>
+    <title>Home</title>
     <meta name="description" content="">
     <!-- View-port Basics: http://mzl.la/VYREaP -->
     <!-- This meta tag is used for mobile device to display the page without any zooming,
@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Normal favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon" />
 
     <!-- PNG/GIF favicon -->
     <!-- Remove this block if not required -->
@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" href="favicon.png" /> -->
 
     <!-- <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"> -->
-
+    <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -248,7 +248,7 @@ function closeNav4() {
 
     <!--Start of main container-->
     <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"></div>
-    <div class="container-fluid"  id="mainContent" style="background:#3997a7;color:#fff;height:100vh;">
+    <div class="container-fluid"  id="mainContent" style="background:#3997a7;color:#fff;">
       <!--Start of wrapper container-->
       <!-- <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"  style="height:100vh;"> -->
         <header>
@@ -256,8 +256,8 @@ function closeNav4() {
               <nav class="navbar navbar-expand-md bg-dark navbar-dark">
                 <h1>
                   <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" width="50" >
-                    <h1 style="display:inline-block;font-size:20px;margin-left:10px;">Welcome to C10</h1>
+                    <img src="img/logo.png" width="50">
+                    <h1 style="display:inline-block;font-size:20px;margin-left:10px;">Chetan classes</h1>
                   </a>
                 </h1>
                 <button class="navbar-toggler" type="button" onclick="openNav3();openOffcanvas()" >
@@ -267,43 +267,65 @@ function closeNav4() {
                   <a href="javascript:void(0)" class="closeOffcanvas" onclick="closeOffcanvas()">&times;</a>
                   <a href="login.html">Login</a>
                   <a href="register.html">Register</a>
-                  <a href="javascript:void(0)">About Us</a>
+                  <a href="aboutus.html">About Us</a>
                 </div>
               </nav>              
           </div>
         </header>
         <section>
-          <!-- <h3 class="text-center" style="margin:20px;">Login</h3> -->
-          
-
-            <div class="row h-100" style="background:#3997a7;color:#fff;">
-              <div class="col-sm-12 my-auto">
-                <h3 class="text-center" style="margin:20px;">Confirm OTP</h3>
-                <form action="studentPage.html">
-                <div style="text-align:center;">
-                  <div style="width:50%;margin:0 auto;">
-                    <div class="row">
-                        <div class="col">
-                          <label for="mob">Enter OTP:</label>
-                        </div>
-                        <div class="col">
-                          <input type="text" name="otp" id="mob" maxlength="10" placeholder=" Enter OTP">
-                        </div>
-                    </div>
-                    <div class="text-center" style="margin:20px;">
-                      <input type="submit" value="Submit OTP">
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>       
+          <h3 class="text-center" style="font-size: 2.5rem">11th Sci</h3>
+          <div class="row">
+            <!-- <div class="col-md-4 col-sm-2"> -->
+              <div class="col-md-4 col-sm-6 text-center">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <h4>English</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <h4>Hindi</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <h4>Marathi</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <h4>Chemistry</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <h4>Biology</h4>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <h4>Physic</h4>
+              </div>            
+          </div>
         </section>
-         
+          
       </div>
       <!--End of wrapper container-->
     </div>
     <!--End of main container-->
+    <footer id="footer">
+              <!-- Contact -->
+              
+              <section class="split contact">
+               <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                  <li><a href="#" class="icon alt fa-twitter"><img src="img/twitter.png" style="height:  10%;width:  25%;" /><span class="label">Twitter</span></a></li>
+                  <li><a href="#" class="icon alt fa-facebook"><img src="img/fb.png" style="height:  10%;width:  25%;" /><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon alt fa-instagram"><img src="img/insta.png" style="height:  10%;width:  25%;" /><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon alt fa-github"><img src="img/whatapp.png" style="height:  10%;width:  25%;" /><span class="label">Whatapp</span></a></li>
+                </ul>
+              </section>
+              </section>
+            </div>
+          </div>
+           
+    </footer>
+
     <script>
       /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
       function openNav() {
