@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <!-- View-port Basics: http://mzl.la/VYREaP -->
+    <!-- This meta tag is used for mobile device to display the page without any zooming,
+    so how much the device is able to fit on the screen is what's shown initially.
+    Remove comments from this tag, when you want to apply media queries to the website. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Normal favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- PNG/GIF favicon -->
+    <!-- Remove this block if not required -->
+    <!-- <link rel="icon" type="image/gif" href="favicon.gif" />
+    <link rel="icon" type="image/png" href="favicon.png" /> -->
+
+    <!-- <link rel="stylesheet" href="bower_components/normalize.css/normalize.css"> -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+    <!-- Remove this if you intend to use modernizr-2.6.2 -->
+    <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      /* The side navigation menu */
+      .bg-dark {
+        background: #0c6b7b !important;
+      }
+      .sidenav {
+          height: 100%; /* 100% Full-height */
+          width: 0; /* 0 width - change this with JavaScript */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Stay on top */
+          top: 0; /* Stay at the top */
+          left: 0;
+          background-color: #111; /* Black*/
+          overflow-x: hidden; /* Disable horizontal scroll */
+          padding-top: 60px; /* Place content 60px from the top */
+          transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+
+      /* The navigation menu links */
+      .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+      }
+
+      /* When you mouse over the navigation links, change their color */
+      .sidenav a:hover {
+          color: #f1f1f1;
+      }
+
+      /* Position and style the close button (top right corner) */
+      .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+      }
+
+      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+      #main {
+          transition: margin-left .5s;
+          /*padding: 20px;*/
+      }
+      .container-fluid {
+        padding: 0px;
+      }
+
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+      }
+    </style>
+    <style>
+      .overlay3 {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 3;
+          top: 0;
+          left:0;
+          background-color: rgba(0,0,0, 0.9);
+          overflow-y: auto;
+          overflow-x: hidden;
+          text-align: center;
+          opacity:0;
+          transition: opacity 1s;
+      }
+
+      body {
+          transition: background-color .5s;
+      }
+      .offcanvas2 {
+          display: none;
+          height: 100%;
+          width: 250px;
+          background-color: #111;
+          top: 0;
+          left: 0;
+          position: fixed;
+          z-index: 3;
+          overflow-x: hidden;
+          transition: .5s;
+          padding-top: 60px;
+      }
+      .offcanvas {
+          height: 100%;
+          width: 0;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          position: fixed;
+          z-index: 3;
+          overflow-x: hidden;
+          transition: .5s;
+          padding-top: 60px;
+      }
+      .offcanvas a,.offcanvas2 a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none !important;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: .3s
+      }
+      .offcanvas a:hover, .offcanvas a:focus,.offcanvas2 a:hover{
+          color: #f1f1f1;
+      }
+      .closeOffcanvas {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px !important;
+          margin-left: 50px;
+      }
+      #mainContent {
+          transition: margin-left .5s;
+      }
+      @media screen and (max-height: 500px) {
+        .offcanvas {padding-top:15px;}
+        .offcanvas a {font-size: 18px;}
+      }
+
+      .sidenav5 {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 3;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          text-align:center;
+      }
+
+      .sidenav5 a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s
+
+      }
+
+      .sidenav5 a:hover{
+          color: #f1f1f1;
+      }
+
+      .sidenav5 .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px !important;
+          margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav5 {padding-top: 15px;}
+        .sidenav5 a {font-size: 18px;}
+      }
+      </style>
+    <script>
+      function openOffcanvas1() {
+          document.getElementById("myOffcanvas").style.width = "250px";
+      }
+      function openOffcanvas2() {
+          document.getElementById("myOffcanvas2").style.display = "block";
+      }
+
+      function openOffcanvas() {
+          document.getElementById("myOffcanvas").style.width = "250px";
+          document.getElementById("mainContent").style.marginLeft = "250px";
+      }
+      function openNav3() {
+          document.getElementById("myCanvasNav").style.width = "100%";
+          document.getElementById("myCanvasNav").style.opacity = "0.8";  
+      }
+      function closeOffcanvas() {
+          document.getElementById("myOffcanvas").style.width = "0%";
+          document.getElementById("mainContent").style.marginLeft= "0%";
+          document.body.style.backgroundColor = "white";
+          document.getElementById("myCanvasNav").style.width = "0%";
+          document.getElementById("myCanvasNav").style.opacity = "0"; 
+      }
+      function closeOffcanvas2() {
+          document.getElementById("myOffcanvas2").style.display = "none";
+      }
+      function openNav4() {
+          document.getElementById("mySidenav").style.width = "100%";
+      }
+
+function closeNav4() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--Start of main container-->
+    <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"></div>
+    <div class="container-fluid"  id="mainContent" style="background:#3997a7;color:#fff;">
+      <!--Start of wrapper container-->
+      <!-- <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()"  style="height:100vh;"> -->
+        <header>
+          <div class="left-float">
+              <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <h1>
+                  <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" width="50">
+                    <h1 style="display:inline-block;font-size:25px;margin-left:10px;">Welcome to C10</h1>
+                  </a>
+                </h1>
+                <button class="navbar-toggler" type="button" onclick="openNav3();openOffcanvas()" >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="myOffcanvas" class="offcanvas">
+                  <a href="javascript:void(0)" class="closeOffcanvas" onclick="closeOffcanvas()">&times;</a>
+                  <a href="login.html">Login</a>
+                  <a href="register.html">Register</a>
+                  <a href="javascript:void(0)">About Us</a>
+                </div>
+              </nav>              
+          </div>
+        </header>
+        <section>
+          <h3 class="text-center" style="margin:20px;">Free Courses</h3>
+          <div class="wrapper" style="padding:20px;">
+            <!-- <div class="col-md-4 col-sm-2"> -->
+              <h2>About Us</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+          </div>
+        </section>
+        <footer>
+          <div>
+            <p class="text-center">Copyright&copy;2018</p>
+          </div>
+        </footer>     
+      </div>
+      <!--End of wrapper container-->
+    </div>
+    <!--End of main container-->
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+      
+    </script>
+  </body>
+</html>
