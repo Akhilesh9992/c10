@@ -265,9 +265,10 @@ function closeNav4() {
                 </button>
                 <div id="myOffcanvas" class="offcanvas">
                   <a href="javascript:void(0)" class="closeOffcanvas" onclick="closeOffcanvas()">&times;</a>
-                  <a href="login.html">Login</a>
-                  <a href="register.html">Register</a>
+                  <a href="login.html" id="log">Login</a>
+                  <a href="register.html" id="reg">Register</a>
                   <a href="aboutus.html">About Us</a>
+                  <a id="logout" onclick="logout()" style="display:none;">Logout</a>
                 </div>
               </nav>              
           </div>
@@ -357,6 +358,18 @@ function closeNav4() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
         document.body.style.backgroundColor = "white";
+      }
+
+      if (localStorage.getItem("otp")=="1234") {
+        console.log("Login Successful !!!");
+        document.getElementById("reg").style.display = "none";
+        document.getElementById("log").style.display = "none";
+        document.getElementById("logout").style.display = "inline-block";
+      };
+
+      function logout () {
+        localStorage.removeItem("otp");
+        location.href = "home.html";
       }
       
     </script>
